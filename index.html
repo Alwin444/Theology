@@ -1,14 +1,231 @@
-<html>
-  <head>
-    <Title>Test Page</Title>
-  </head>
-  <Body>
-    <H1><u>Test</u></H1>
-    <p><b>Perishable wears imperishable and mortal wears immortal,</b></p>
-    <p><b>When Perishable wears imperishable and mortal wears immortal Then it is Written</b></p>
-    <b>Death shall swallowed up by Victory</b>
-    <p><i><b>     Where O' death is your victory</b></i></p>
-    <p><i><b>         Where O' death is your sting</b></i></p>
-    <b>Show mercy on This sinner</b> 
-  </Body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A House</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Navigation bar */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main sections */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .banner {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .banner h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        /* Houses grid */
+        .houses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .house {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .house img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .house h3 {
+            margin: 10px 0;
+        }
+
+        .house p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        /* Contact section */
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Rent A House</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#houses">Our Houses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h2>Find Your Dream House Today</h2>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>At Rent A House, we help people find the perfect home. Whether you are looking for a small apartment or a large house, we have a wide range of options to meet your needs.</p>
+    </section>
+
+    <!-- Houses Section -->
+    <section id="houses" class="container">
+        <h2>Our Houses</h2>
+        <div class="houses">
+            <div class="house">
+                <img src="https://via.placeholder.com/300x200" alt="House 1">
+                <h3>Beautiful Family House</h3>
+                <p>3 Beds, 2 Baths, 1 Garage</p>
+            </div>
+            <div class="house">
+                <img src="https://via.placeholder.com/300x200" alt="House 2">
+                <h3>Modern Apartment</h3>
+                <p>2 Beds, 1 Bath, City View</p>
+            </div>
+            <div class="house">
+                <img src="https://via.placeholder.com/300x200" alt="House 3">
+                <h3>Cozy Suburban Home</h3>
+                <p>4 Beds, 3 Baths, Garden</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rent A House. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
